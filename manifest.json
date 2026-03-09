@@ -1,9 +1,19 @@
 {
   "name": "HMIS Visual Enhancement",
-  "description": "Adds contrast to the Community Services HMIS UI.",
-  "version": "0.4",
+  "description": "Adds contrast to the Community Services HMIS UI and highlights missing data fields.",
+  "version": "0.8",
   "manifest_version": 3,
   "author": "Clint Johnson",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hmis-visual-enhancement@clintjohnson",
+      "strict_min_version": "143.0",
+      "update_url": "https://raw.githubusercontent.com/nmbgeek/HMIS-Visual-Enhancement-Plugin/master/updates.json",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "icons": {
     "64": "cs-64.png",
     "128": "cs-128.png",
@@ -13,13 +23,17 @@
   "content_scripts": [
     {
       "css": ["cs-custom.css"],
-      "matches": ["https://sp5.servicept.com/*"]
+      "matches": [
+        "https://wscs.wellsky.com/*"
+      ]
     }
   ],
   "web_accessible_resources": [
     {
       "resources": ["cs-custom.css"],
-      "matches": ["https://sp5.servicept.com/*"]
+      "matches": [
+        "https://wscs.wellsky.com/*"
+      ]
     }
   ]
 }

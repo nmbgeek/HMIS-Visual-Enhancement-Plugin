@@ -4,6 +4,20 @@ div[class*='-tab-selected'] .sp5-TabPanelHeader,
   font-weight: 600 !important;
 }
 
+/* Highlight empty profile fields (using aria-label because gwt-uid IDs are dynamic and change on refresh) */
+.gwt-HTML[aria-label*="Data not collected"],
+.gwt-HTML[aria-label^="Name "]:empty,
+.gwt-HTML[aria-label^="Social Security "]:empty,
+.gwt-HTML[aria-label^="Date of Birth "]:empty,
+.gwt-HTML[aria-label^="U.S. Military Veteran?"]:empty,
+.gwt-HTML[aria-label^="Race and Ethnicity "]:empty,
+.gwt-HTML[aria-label^="Sex "]:empty {
+  background-color: #ffebee;
+  border: 2px solid red;
+  min-height: 25px;
+  display: block;
+}
+
 .font-gray {
   color: #333 !important;
 }
