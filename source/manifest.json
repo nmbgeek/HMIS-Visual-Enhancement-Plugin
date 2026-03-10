@@ -1,7 +1,7 @@
 {
   "name": "HMIS Visual Enhancement",
   "description": "Adds contrast to the Community Services HMIS UI and highlights missing data fields.",
-  "version": "0.8",
+  "version": "0.9",
   "manifest_version": 3,
   "author": "Clint Johnson",
   "browser_specific_settings": {

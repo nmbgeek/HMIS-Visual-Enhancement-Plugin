@@ -3,6 +3,10 @@
     "hmis-visual-enhancement@clintjohnson": {
       "updates": [
         {
+          "version": "0.9",
+          "update_link": "https://raw.githubusercontent.com/nmbgeek/HMIS-Visual-Enhancement-Plugin/master/downloads/hmis_visual_enhancement-0.9.xpi"
+        },
+        {
           "version": "0.8",
           "update_link": "https://raw.githubusercontent.com/nmbgeek/HMIS-Visual-Enhancement-Plugin/master/downloads/hmis_visual_enhancement-0.8.xpi"
         }
